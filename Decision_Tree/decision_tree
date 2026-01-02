@@ -1,0 +1,16 @@
+Decision tree
+------------
+It is supervised machine learning algorithm
+It is used for both classification and regression
+
+It creates a tree based on given dataset
+Based on the tree,the model will execute
+
+Tree contains: Node and Leaf
+
+Node: Root Node=>1
+Leaf: Multiple number of leafs
+
+
+input_features ==> Nodes(1 Root node and Multiple intermediate nodes)
+class labels ==> Leaf
