@@ -1,0 +1,58 @@
+Logistic regression is a technique used for classififcation
+
+Unlike linear regression, which predicts a continuous number, 
+logistic regression predicts a probability 
+— specifically, the probability that an input belongs to a particular class.
+
+Example
+---------
+Predict if a student will pass or fail based on study hours.
+The output is:
+
+Probability of pass (between 0 and 1)
+-------------------------------------
+If probability > 0.5 → classify as Pass
+
+If probability < 0.5 → classify as Fail
+
+
+🎯 Why logistic?
+---------------------
+Because it uses a logistic (sigmoid) function to convert linear values into probabilities:
+
+----------------
+𝜎(z)=1/(1+e^-z)
+----------------
+
+
+This ensures the output is always between 0 and 1.
+
+
+When do we use Logistic Regression?
+----------------------------------
+
+-Spam or Not Spam
+
+-Yes or No
+
+-Fraud or Not Fraud
+
+-Disease or No Disease
+
+-Click or No Click​
+
+
+These are binary classification tasks.
+
+_________________________________________________
+| Study Hours | Probability Pass | Final Output |
+| ----------- | ---------------- | ------------ |
+| 2 hrs       | 0.20             | Fail         |
+| 6 hrs       | 0.87             | Pass         |
+|_______________________________________________|
+
+Types of Logistic Regression
+----------------------------
+1️⃣ Binary (two outputs)
+2️⃣ Multiclass (one vs rest)
+3️⃣ Multinomial
