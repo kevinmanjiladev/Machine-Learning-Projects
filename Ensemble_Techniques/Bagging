@@ -1,0 +1,43 @@
+Bagging:
+--------
+Bagging (Bootstrap Aggregating) is an ensemble learning technique in machine learning used to reduce variance, prevent overfitting, and improve model stability, especially for high-variance algorithms like decision trees.
+
+Bagging trains multiple models on different random subsets of the training data (sampled with replacement) and then combines their outputs.
+
+Think of it like:
+
+    Asking many people the same question after giving each person slightly different information.
+    Then taking the majority vote (classification) or average (regression).
+
+
+🔍 How Bagging Works
+----------------------
+Step 1: Bootstrap Sampling
+
+    From the original dataset with N samples, create k new datasets of size N,
+
+    Each dataset is created by random sampling with replacement (so some rows repeat).
+
+Step 2: Train Models
+
+    Train k separate models (usually weak learners).
+
+Step 3: Aggregate Predictions
+
+    Classification: majority vote
+
+    Regression: average of predictions
+
+
+
+✔ When to Use Bagging
+
+    Use bagging when:
+
+    Your model overfits.
+
+    Your model is high variance (like decision trees).
+
+    You want higher accuracy.
+
+    You have noisy data.
